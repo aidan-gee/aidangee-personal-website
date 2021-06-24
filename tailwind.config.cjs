@@ -22,7 +22,9 @@ const config = {
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/typography'),
+	],
 };
 
 module.exports = config;

@@ -23,6 +23,8 @@
 <svelte:head>
 	<title>Developer Blog = {metadata.title}</title>
 </svelte:head>
-<div class="container max-w-screen-md mx-auto pt-24">
-    <Post/>
+<div class="container max-w-screen-md mx-auto pt-32">
+    <article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+        <Post/>
+    </article>
 </div>
