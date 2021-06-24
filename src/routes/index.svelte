@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Aidan Gee = Fullstack developer.</title>
+</svelte:head>
+
 <section class="flex flex-col h-screen m-auto items-center bg-gradient quantum">
     <div class="
           container
