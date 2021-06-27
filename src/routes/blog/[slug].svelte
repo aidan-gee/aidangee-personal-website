@@ -4,7 +4,7 @@
 	 */
 	export async function load({ page }) {
         // TODO: nice to have some error handling
-        const postRecord = await import(`/src/lib/posts/${page.params.slug}.svelte.md`);
+        const postRecord = await import(`../../lib/posts/post-${page.params.slug}.svelte.md`);
         
         return {
             props: {
