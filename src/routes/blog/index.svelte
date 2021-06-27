@@ -3,6 +3,7 @@
 	 * @type {import('@sveltejs/kit').Load}
 	 */
 	export async function load({ page, fetch, session, context }) {
+        // TODO: nice to have some error handling
         const postsRecords = import.meta.globEager('/src/lib/posts/*.svelte.md');
         let posts = Object.values(postsRecords)
         posts = posts.map((post) => post.metadata);
@@ -17,24 +18,28 @@
 	}
 </script>
 
-<script>
+<script lang="ts">
+    import { formateDate } from "$lib/dates";
     export let posts;
+
 </script>
 
 <svelte:head>
-	<title>Developer Blog = A blog for new tech, technical posts, ideas and more. </title>
+	<title>Developer Blog - new tech, technical posts, ideas and more. </title>
+    <meta name="description" content="Web Development blog, everything from databases to CSS.">
 </svelte:head>
 
-<div class="container max-w-screen-md mx-auto pt-24">
+<div class="container max-w-screen-md mx-auto pt-28">
     <section class="text-center">
-        <h1 class="text-4xl font-bold">Blog</h1>
+        <h1 class="text-4xl font-bold">Developer Blog</h1>
     </section>
-    <section >
+    <section role="main" class="py-8">
         {#each posts as post}
             <div class="p-12">
                 <h2 class="text-2xl font-bold border-b-2 inline border-gradient py-1">{post.title}</h2>
-                <p class="py-4">{post.snippet}</p>
-                <a class="hover:underline" sveltekit:prefetch href="/blog/{post.slug}">Read More →</a>
+                <span class="pt-4 pb-2 block text-sm">{formateDate(post.date)}</span>
+                <p class="pb-2">{post.snippet}</p>
+                <a class="relative" sveltekit:prefetch href="/blog/{post.slug}">Read More →</a>
             </div>
         {/each}
         

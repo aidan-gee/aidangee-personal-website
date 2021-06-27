@@ -1,5 +1,6 @@
 <svelte:head>
-	<title>Aidan Gee = Fullstack developer.</title>
+	<title>Aidan Gee - Full Stack developer</title>
+    <meta name="description" content="A Manchester based Full Stack Developer. Building modern web apps with Javascript, Typescript, React, Svelte & more.">
 </svelte:head>
 
 <section class="flex flex-col h-screen m-auto items-center bg-gradient quantum">
@@ -10,8 +11,12 @@
           text-center
         ">
         <h1 class="text-shadow text-6xl">Aidan Gee</h1>
-        <h3 class="text-shadow text-2xl">Fullstack Developer</h3>
+        <h3 class="text-shadow text-2xl">Full Stack Developer</h3>
 
+    </div>
+    <div class="absolute bottom-0 p-4 flex flex-column align-center justify-center">
+        <h4 class="text-shadow text-md inline">Built with <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a></h4>
+        <a href="https://github.com/aidan-gee/aidangee-personal-website" target="_blank"><img class="inline mx-2" alt="github link to this website repository" src="/GitHub-Mark-Light-32px.png" height="24" width="24" loading="lazy"/></a>
     </div>
 </section>
 
