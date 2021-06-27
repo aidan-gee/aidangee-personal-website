@@ -46,7 +46,7 @@ On that note, the initial public beta for Deno Deploy is free to use. So it is a
 
 When you sign up and login to Deno Deploy you will be asked to create a project to house the Deno services you intend to deploy. You will also be met with a couple of examples ready to deploy at the click of a button.
 
-Project Dashboard: ![Alt](https://res.cloudinary.com/wubo/image/upload/c_scale,f_auto,q_auto:best,w_1080/v1624639605/blog/deno-deploy-project-dashboard_sf1zyp.png "Deno Deploy project dashboard")
+Project Dashboard: ![Deno Deploy project dashboard](https://res.cloudinary.com/wubo/image/upload/c_scale,f_auto,q_auto:best,w_1080/v1624639605/blog/deno-deploy-project-dashboard_sf1zyp.png "Deno Deploy project dashboard")
 
 Let's look at that code for the Hello World example:
 
