@@ -24,7 +24,7 @@
 	<title>Developer Blog = {metadata.title}</title>
     <meta name="description" content="{metadata.snippet}">
 </svelte:head>
-<div class="container max-w-screen-md mx-auto py-32">
+<div class="container max-w-screen-md mx-auto py-32 px-12 md:px-0">
     <article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl" role="main">
         <Post/>
     </article>

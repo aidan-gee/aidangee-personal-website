@@ -77,14 +77,16 @@ The first is almost a requirement of a hosting platform nowadays, you can connec
 
 This is a quote from their blog that made me want to test out this beta. It is a bold claim to say the least, but I think performance needs to be something every developer has in their mind when building a modern Web App. Especially with the push from Google on [core web vitals](https://web.dev/vitals/), and it's effect on your websites SEO. The option of a fast easy to use serverless platform is right up there on my Christmas list. 
 
-So, what I wanted to look at was the speed of the platform itself. The simple hello world app is perfect for a basic test, how fast does it respond with a simple hello world? For these tests, I compared the [TTFB (https://web.dev/time-to-first-byte/)] over a number of requests. 
+So, what I wanted to look at was the speed of the platform itself. The simple hello world app is perfect for a basic test, how fast does it respond with a simple hello world? For these tests, I compared the [TTFB](https://web.dev/time-to-first-byte/) over a number of requests. 
+
+##### Deno Deploy
 
 **TTFB of Cold Start**: 575 ms (avg of 5 requests)
 
 **TTFB once warmed** : 44ms (avg of 50 requests)
 
 For a Beta, I think these are impressive numbers. To give some perspective, I also tested out [Netlify](https://www.netlify.com/) who as part of their platform provide Netlify Functions. A similar easy to use serverless deployment experience but for Node.js. if you put the same 'Hello World' example on Netlify Functions (deployed in Europe) the same tests looked like :
-
+##### Netlify
 
 **TTFB of Cold Start**: 812 ms (avg of 5 requests)
 
