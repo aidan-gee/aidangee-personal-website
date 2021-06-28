@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-	<title>Developer Blog = {metadata.title}</title>
+	<title>Developer Blog - {metadata.title}</title>
     <meta name="description" content="{metadata.snippet}">
 </svelte:head>
 <div class="container max-w-screen-md mx-auto py-32 px-12 md:px-0">

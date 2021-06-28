@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-	<title>Developer Blog - new tech, technical posts, ideas and more. </title>
+	<title>Developer Blog - New tech, technical posts, ideas and more. </title>
     <meta name="description" content="Web Development blog, everything from databases to CSS.">
 </svelte:head>
 
