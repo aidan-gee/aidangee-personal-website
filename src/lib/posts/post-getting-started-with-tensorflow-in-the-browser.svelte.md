@@ -87,7 +87,7 @@ The predictions you get back from the detect function look like this:
 
 > Note : The position (bbox) variables you get back will be based on the original video resolution. 
 
-You could use this data to detect some context of what was in a particular video or track certain objects in the video as it plays plays... all in the browser. 
+You could use this data to detect some context of what was in a particular video or track certain objects in the video as it plays... all in the browser. 
 
 ![object recognition highlighted football in a video](https://res.cloudinary.com/wubo/image/upload/c_scale,f_auto,q_72,w_1435/v1625085017/blog/ml-obbect-recognition-video.png)
 
