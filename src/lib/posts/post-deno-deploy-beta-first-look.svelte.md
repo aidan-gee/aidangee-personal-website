@@ -50,7 +50,7 @@ Project Dashboard: ![Deno Deploy project dashboard](https://res.cloudinary.com/w
 
 Let's look at that code for the Hello World example:
 
-```
+```javascript
 addEventListener("fetch", (event) => {
   event.respondWith(new Response("Hello world"));
 });
